@@ -1,0 +1,23 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+
+# Exclude GitHub stuff
+LICENSE$
+Readme\.md
+^appveyor\.yml$
+^docs$
+^_pkgdown\.yml$
+^\.github$
+
+# Readme RMD files
+^README_figs
+^README\.html$
+^README\.Rmd$
+^README-.*\.png$
+NEWS.md
+
+# -- Exclude compiled code --
+^src/.*\.o$
+^src/.*/.*\.o$
+^LICENSE\.md$
+^Makefile$
