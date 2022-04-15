@@ -44,6 +44,7 @@ devtools::install_github("JohannesFriedrich/qoi4R")
 ## Usage
 
 There are just two main functions: `readQOI()` and `writeQOI()`.
+
 * `readQOI()`: Takes an qoi-format image and decodes it into its RGB or RGBA values. The result is a matrix with dimensions height x width x channels.
 * `writeQOI()`: Takes an RGB(A) matrix and encodes it into an qoi-image.
 

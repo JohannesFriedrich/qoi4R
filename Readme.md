@@ -33,11 +33,13 @@ devtools::install_github("JohannesFriedrich/qoi4R")
 
 ## Usage
 
-There are just two main functions: `readQOI()` and `writeQOI()`. \*
-`readQOI()`: Takes an qoi-format image and decodes it into its RGB or
-RGBA values. The result is a matrix with dimensions height x width x
-channels. \* `writeQOI()`: Takes an RGB(A) matrix and encodes it into an
-qoi-image.
+There are just two main functions: `readQOI()` and `writeQOI()`.
+
+-   `readQOI()`: Takes an qoi-format image and decodes it into its RGB
+    or RGBA values. The result is a matrix with dimensions height x
+    width x channels.
+-   `writeQOI()`: Takes an RGB(A) matrix and encodes it into an
+    qoi-image.
 
 ### `readQOI()`
 
@@ -116,3 +118,17 @@ file <- file("file.qoi", "wb")
 writeQOI(qoi_logo_rgb_qoi, file)
 close(file)
 ```
+
+## Acknowlegment
+
+This package would not exist without the following
+persons/homepages/tutorial/…:
+
+-   [Phoboslab - original
+    specification](https://github.com/phoboslab/qoi)
+-   [PNG R-package](https://github.com/s-u/png)
+-   [Example C-code
+    R-package](https://github.com/coolbutuseless/simplecall)
+-   [R
+    extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
+-   [Hadley´s R-Internals](https://github.com/hadley/r-internals)
