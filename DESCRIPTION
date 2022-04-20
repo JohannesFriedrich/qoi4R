@@ -1,9 +1,12 @@
 Package: qoi
 Type: Package
 Title: Read and Write QOI Images
-Date: 2022-04-15
-Version: 0.0.1
-Authors@R: person("Johannes", "Friedrich", role = c("aut", "cre"), email = "Johannes.Friedrich@posteo.de")
+Date: 2022-04-20
+Version: 0.0.2
+Author: Johannes Friedrich [aut, trl, cre],
+        Daniel Szablewski [cph] (C library 'qoi')
+Authors@R: c(person("Johannes", "Friedrich", role = c("aut", "trl","cre"), email = c("Johannes.Friedrich@posteo.de")),
+             person("Daniel", "Szablewski", role = c("cph"), comment = c("C library 'qoi'")))
 Maintainer: Johannes Friedrich <Johannes.Friedrich@posteo.de>
 URL: https://github.com/JohannesFriedrich/qoi4R
 BugReports: https://github.com/JohannesFriedrich/qoi4R/issues
