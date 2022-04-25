@@ -1,5 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- badges: start -->
+
+[![CRAN](http://www.r-pkg.org/badges/version/qoi)](https://CRAN.R-project.org/package=qoi)
+[![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/qoi)](https://www.r-pkg.org/pkg/qoi)
+[![R-CMD-check](https://github.com/JohannesFriedrich/qoi4R/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/JohannesFriedrich/qoi4R/actions/workflows/R-CMD-check.yaml)
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+
+<!-- badges: end -->
 
 # QOI
 
@@ -20,14 +30,17 @@ C-code.
 
 ## Installation
 
-Until now the package is not on CRAN, so just install it via GitHub:
+The package is on CRAN. The easiest way to download is via:
+
+``` r
+install.packages("qoi")
+```
 
 You can install the development version from GitHub with the following
 command:
 
 ``` r
-if (!require("devtools"))
-  install.packages("devtools")
+if (!require("devtools")) install.packages("devtools")
 devtools::install_github("JohannesFriedrich/qoi4R")
 ```
 
@@ -64,7 +77,7 @@ rasterImage(Rlogo_pixels/255, xleft = 0, xright = 1,
             ytop = 0, ybottom = 1, interpolate = FALSE)
 ```
 
-<img src="README_figs/README-unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" />
 
 The pixels returned from `readQOI()` are integer values between 0 - 255.
 To show them with `rasteImage()` it is necessary to divide them by 255
@@ -89,10 +102,12 @@ identical(qoi_logo_rgb_png, qoi_logo_rgb_qoi)
 ### `writeQOI()`
 
 With this function it is possible to save an RGB(A) matrix to an
-QOI-image. The input arguments are: \* image: a matrix with dimensions
-height x width x channels \* target: Either name of the file to write, a
-binary connection or a raw vector indicating that the output should be a
-raw vector (so the hex-interpretation of the image).
+QOI-image. The input arguments are:
+
+-   image: a matrix with dimensions height x width x channels
+-   target: Either name of the file to write, a binary connection or a
+    raw vector indicating that the output should be a raw vector (so the
+    hex-interpretation of the image).
 
 If no second argument is given, the returned value is the
 hex-interpretation of the image in the QOI-file format.
