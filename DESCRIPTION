@@ -1,8 +1,8 @@
 Package: qoi
 Type: Package
 Title: Read and Write QOI Images
-Date: 2022-04-20
-Version: 0.0.3
+Date: 2023-02-07
+Version: 0.0.4
 Author: Johannes Friedrich [aut, trl, cre],
         Dominic Szablewski [cph] (C library 'qoi')
 Authors@R: c(person("Johannes", "Friedrich", role = c("aut", "trl","cre"), email = c("Johannes.Friedrich@posteo.de")),
@@ -14,7 +14,7 @@ Description: The new QOI file format offers a very simple but efficient image co
 License: GPL (>= 3)
 Encoding: UTF-8
 NeedsCompilation: yes
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
 LazyData: true

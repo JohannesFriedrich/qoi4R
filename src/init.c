@@ -6,8 +6,8 @@
 // Many thanks to coolbutuseless for the great tutorials!
 // https://github.com/coolbutuseless/simplecall
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-extern SEXP qoiRead_();
-extern SEXP qoiWrite_();
+extern SEXP qoiRead_(SEXP);
+extern SEXP qoiWrite_(SEXP, SEXP);
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // .C      R_CMethodDef
