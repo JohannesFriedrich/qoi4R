@@ -8,6 +8,7 @@
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![codecov](https://codecov.io/github/JohannesFriedrich/qoi4R/graph/badge.svg?token=SHhbrXi8yH)](https://codecov.io/github/JohannesFriedrich/qoi4R)
 
 <!-- badges: end -->
 
