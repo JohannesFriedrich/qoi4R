@@ -96,15 +96,15 @@ void *qoi_encode(const void *data, const qoi_desc *desc, int *out_len) {
 
           if (
               vr > -3 && vr < 2 &&
-                vg > -3 && vg < 2 &&
-                vb > -3 && vb < 2
+              vg > -3 && vg < 2 &&
+              vb > -3 && vb < 2
           ) {
             bytes[p++] = QOI_OP_DIFF | (vr + 2) << 4 | (vg + 2) << 2 | (vb + 2);
           }
           else if (
               vg_r >  -9 && vg_r <  8 &&
-                vg   > -33 && vg   < 32 &&
-                vg_b >  -9 && vg_b <  8
+              vg   > -33 && vg   < 32 &&
+              vg_b >  -9 && vg_b <  8
           ) {
             bytes[p++] = QOI_OP_LUMA     | (vg   + 32);
             bytes[p++] = (vg_r + 8) << 4 | (vg_b +  8);

@@ -15,6 +15,7 @@ editor_options:
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![codecov](https://codecov.io/github/JohannesFriedrich/qoi4R/graph/badge.svg?token=SHhbrXi8yH)](https://codecov.io/github/JohannesFriedrich/qoi4R)
 
 <!-- badges: end -->
 
@@ -104,9 +105,9 @@ from `readPNG()` are numerical values between 0 and 1. To compare the
 results multiply with 255 and change the mode to integer.
 
 ```{r}
-qoi_logo_rgb_png <- png::readPNG(path <- system.file("extdata", "qoi_logo.png", package="qoi"))*255
+qoi_logo_rgb_png <- png::readPNG(system.file("extdata", "qoi_logo.png", package="qoi"))*255L
 
-qoi_logo_rgb_qoi <- qoi::readQOI(path <- system.file("extdata", "qoi_logo.qoi", package="qoi"))
+qoi_logo_rgb_qoi <- qoi::readQOI(system.file("extdata", "qoi_logo.qoi", package="qoi"))
 
 mode(qoi_logo_rgb_png) <- "integer"
 

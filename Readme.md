@@ -48,11 +48,10 @@ devtools::install_github("JohannesFriedrich/qoi4R")
 
 There are just two main functions: `readQOI()` and `writeQOI()`.
 
--   `readQOI()`: Takes an qoi-format image and decodes it into its RGB
-    or RGBA values. The result is a matrix with dimensions height x
-    width x channels.
--   `writeQOI()`: Takes an RGB(A) matrix and encodes it into an
-    qoi-image.
+- `readQOI()`: Takes an qoi-format image and decodes it into its RGB or
+  RGBA values. The result is a matrix with dimensions height x width x
+  channels.
+- `writeQOI()`: Takes an RGB(A) matrix and encodes it into an qoi-image.
 
 ### `readQOI()`
 
@@ -89,9 +88,9 @@ from `readPNG()` are numerical values between 0 and 1. To compare the
 results multiply with 255 and change the mode to integer.
 
 ``` r
-qoi_logo_rgb_png <- png::readPNG(path <- system.file("extdata", "qoi_logo.png", package="qoi"))*255
+qoi_logo_rgb_png <- png::readPNG(system.file("extdata", "qoi_logo.png", package="qoi"))*255L
 
-qoi_logo_rgb_qoi <- qoi::readQOI(path <- system.file("extdata", "qoi_logo.qoi", package="qoi"))
+qoi_logo_rgb_qoi <- qoi::readQOI(system.file("extdata", "qoi_logo.qoi", package="qoi"))
 
 mode(qoi_logo_rgb_png) <- "integer"
 
@@ -104,10 +103,10 @@ identical(qoi_logo_rgb_png, qoi_logo_rgb_qoi)
 With this function it is possible to save an RGB(A) matrix to an
 QOI-image. The input arguments are:
 
--   image: a matrix with dimensions height x width x channels
--   target: Either name of the file to write, a binary connection or a
-    raw vector indicating that the output should be a raw vector (so the
-    hex-interpretation of the image).
+- image: a matrix with dimensions height x width x channels
+- target: Either name of the file to write, a binary connection or a raw
+  vector indicating that the output should be a raw vector (so the
+  hex-interpretation of the image).
 
 If no second argument is given, the returned value is the
 hex-interpretation of the image in the QOI-file format.
@@ -139,11 +138,10 @@ close(file)
 This package would not exist without the following
 persons/homepages/tutorial/…:
 
--   [Phoboslab - original
-    specification](https://github.com/phoboslab/qoi)
--   [PNG R-package](https://github.com/s-u/png)
--   [Example C-code
-    R-package](https://github.com/coolbutuseless/simplecall)
--   [R
-    extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
--   [Hadley´s R-Internals](https://github.com/hadley/r-internals)
+- [Phoboslab - original specification](https://github.com/phoboslab/qoi)
+- [PNG R-package](https://github.com/s-u/png)
+- [Example C-code
+  R-package](https://github.com/coolbutuseless/simplecall)
+- [R
+  extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
+- [Hadley´s R-Internals](https://github.com/hadley/r-internals)
