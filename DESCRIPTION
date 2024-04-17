@@ -1,8 +1,8 @@
 Package: qoi
 Type: Package
 Title: Read and Write QOI Images
-Date: 2024-04-18
-Version: 0.0.5
+Date: 2024-04-17
+Version: 0.1.0
 Author: Johannes Friedrich [aut, trl, cre],
         Dominic Szablewski [cph] (C library 'qoi')
 Authors@R: c(person("Johannes", "Friedrich", role = c("aut", "trl","cre"), email = c("Johannes.Friedrich@posteo.de")),
@@ -11,10 +11,10 @@ Maintainer: Johannes Friedrich <Johannes.Friedrich@posteo.de>
 URL: https://github.com/JohannesFriedrich/qoi4R
 BugReports: https://github.com/JohannesFriedrich/qoi4R/issues
 Description: The new QOI file format offers a very simple but efficient image compression algorithm. This package provides an easy and simple way to read, write and display bitmap images stored in the QOI (Quite Ok Image) format. It can read and write both files and in-memory raw vectors.
-License: GPL (>= 3)
+License: MIT + file LICENSE
 Encoding: UTF-8
 NeedsCompilation: yes
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Depends: 
     R (>= 2.10)
 LazyData: true

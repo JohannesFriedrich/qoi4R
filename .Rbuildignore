@@ -2,7 +2,6 @@
 ^\.Rproj\.user$
 
 # Exclude GitHub stuff
-LICENSE$
 Readme\.md
 ^appveyor\.yml$
 ^docs$
