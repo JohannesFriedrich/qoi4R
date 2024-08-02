@@ -2,7 +2,7 @@ Package: qoi
 Type: Package
 Title: Read and Write QOI Images
 Date: 2024-04-17
-Version: 0.1.0
+Version: 0.1.1
 Author: Johannes Friedrich [aut, trl, cre],
         Dominic Szablewski [cph] (C library 'qoi')
 Authors@R: c(person("Johannes", "Friedrich", role = c("aut", "trl","cre"), email = c("Johannes.Friedrich@posteo.de")),

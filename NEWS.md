@@ -1,8 +1,7 @@
-# qoi 0.1.1 (develop)
+# qoi 0.1.1 (development)
 
-  * add NEWS file
+  * remove NEWS file from .Rbuildignore
   * change qoi-package.R to new package documentation
-
 
 # qoi 0.1.0 (2024-04-17)
 
