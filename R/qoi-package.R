@@ -1,3 +1,6 @@
+#' @keywords internal
+"_PACKAGE"
+
 #' @useDynLib qoi, .registration=TRUE
 NULL
 

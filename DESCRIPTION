@@ -14,7 +14,7 @@ Description: The new QOI file format offers a very simple but efficient image co
 License: MIT + file LICENSE
 Encoding: UTF-8
 NeedsCompilation: yes
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true

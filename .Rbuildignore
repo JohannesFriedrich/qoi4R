@@ -13,7 +13,6 @@ Readme\.md
 ^README\.html$
 ^README\.Rmd$
 ^README-.*\.png$
-NEWS.md
 
 # -- Exclude compiled code --
 ^src/.*\.o$

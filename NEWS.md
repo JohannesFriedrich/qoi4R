@@ -1,3 +1,9 @@
+# qoi 0.1.1 (develop)
+
+  * add NEWS file
+  * change qoi-package.R to new package documentation
+
+
 # qoi 0.1.0 (2024-04-17)
 
   * update qoi.h with current licence
