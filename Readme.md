@@ -2,7 +2,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
 
-[![CRAN](http://www.r-pkg.org/badges/version/qoi)](https://CRAN.R-project.org/package=qoi)
+[![CRAN](http://www.r-pkg.org/badges/version/qoi)](https://cran.r-project.org/web/packages/qoi/index.html)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/qoi)](https://www.r-pkg.org/pkg/qoi)
 [![R-CMD-check](https://github.com/JohannesFriedrich/qoi4R/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/JohannesFriedrich/qoi4R/actions/workflows/R-CMD-check.yaml)
 [![Project Status: Active – The project has reached a stable, usable
