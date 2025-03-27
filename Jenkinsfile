@@ -1,31 +1,48 @@
 pipeline {
-    agent {
-        docker {
-            image 'r-base'
-        }
-    }
+    agent any
 
     environment {
         R_LIBS_USER = "${WORKSPACE}/Rlibs"
     }
 
     stages {
+        stage('Setup Environment') {
+            steps {
+                script {
+                    sh 'mkdir -p ${R_LIBS_USER}'
+                    sh 'docker pull r-base'
+                }
+            }
+        }
+
         stage('Install Dependencies') {
             steps {
-                sh 'mkdir -p ${R_LIBS_USER}'
-                sh 'R -e "install.packages(c(\'devtools\', \'testthat\'), repos=\'http://cran.rstudio.com\')"'
+                script {
+                    sh '''
+                    docker run --rm -v "$PWD":/workspace -w /workspace r-base R -e "
+                    install.packages(c('devtools', 'testthat'), repos='http://cran.rstudio.com')"
+                    '''
+                }
             }
         }
 
         stage('Build Package') {
             steps {
-                sh 'R CMD build .'
+                script {
+                    sh '''
+                    docker run --rm -v "$PWD":/workspace -w /workspace r-base R CMD build .
+                    '''
+                }
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'R -e "devtools::test()"'
+                script {
+                    sh '''
+                    docker run --rm -v "$PWD":/workspace -w /workspace r-base R -e "devtools::test()"
+                    '''
+                }
             }
         }
     }
