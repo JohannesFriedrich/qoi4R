@@ -7,12 +7,17 @@
 writeQOI(image, target = raw())
 }
 \arguments{
-\item{image}{\link{matrix} (\strong{required}): Image represented by a integer matrix or array with values in the range of 0 to 255.}
+\item{image}{\link{matrix} (\strong{required}): Image represented by a integer matrix
+or array with values in the range of 0 to 255.}
 
-\item{target}{\link{character} or \link{connections} or \link{raw}: Either name of the file to write, a binary connection or a raw vector (raw() - the default - is good enough) indicating that the output should be a raw vector.}
+\item{target}{\link{character} or \link{connections} or \link{raw}: Either name of the file
+to write, a binary connection or a raw vector
+(raw() - the default - is good enough) indicating that the output should be
+a raw vector.}
 }
 \value{
-The result is either stored in a file (if target is a file name), in a raw vector (if target is a raw vector) or sent to a binary connection.
+The result is either stored in a file (if target is a file name),
+in a raw vector (if target is a raw vector) or sent to a binary connection.
 }
 \description{
 Write an QOI image from an RGB(A) raster array or matrix

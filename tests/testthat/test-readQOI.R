@@ -1,6 +1,6 @@
 test_that("readQOI works as expected", {
-  path_qoi <- system.file("extdata", "Rlogo.qoi", package="qoi")
-  path_png <- system.file("extdata", "Rlogo.png", package="qoi")
+  path_qoi <- system.file("extdata", "Rlogo.qoi", package = "qoi")
+  path_png <- system.file("extdata", "Rlogo.png", package = "qoi")
   rlogo_qoi <- readQOI(path_qoi)
 
   # check output type and dim

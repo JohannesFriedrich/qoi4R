@@ -2,6 +2,7 @@
 
   * remove NEWS file from .Rbuildignore
   * change qoi-package.R to new package documentation
+  * use `lintr` package to analyse code
 
 # qoi 0.1.0 (2024-04-17)
 

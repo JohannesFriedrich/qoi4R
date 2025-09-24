@@ -1,7 +1,8 @@
 #' Read an QOI image into a RGB(A) raster array
 #' @param qoi_image_path [character] (**required**): Path to a stored qoi-image
-#' @return A matrix with integer (0-255) RGB(A) values with dimensions height x width x channels.
-#' Until now 3 (RGB) and 4 (RGBA) channels are integrated in the specification.
+#' @return A matrix with integer (0-255) RGB(A) values with dimensions height x
+#' width x channels. Until now 3 (RGB) and 4 (RGBA) channels are integrated in
+#' the specification.
 #' If the decoding went wrong the returned value is NULL.
 #' @author Johannes Friedrich
 #' @examples
@@ -17,5 +18,5 @@
 #' @md
 #' @export
 readQOI <- function(qoi_image_path) {
-  .Call(qoiRead_, if(is.raw(qoi_image_path)) qoi_image_path else path.expand(qoi_image_path))
+  .Call(qoiRead_, if (is.raw(qoi_image_path)) qoi_image_path else path.expand(qoi_image_path))
 }
