@@ -10,8 +10,9 @@ readQOI(qoi_image_path)
 \item{qoi_image_path}{\link{character} (\strong{required}): Path to a stored qoi-image}
 }
 \value{
-A matrix with integer (0-255) RGB(A) values with dimensions height x width x channels.
-Until now 3 (RGB) and 4 (RGBA) channels are integrated in the specification.
+A matrix with integer (0-255) RGB(A) values with dimensions height x
+width x channels. Until now 3 (RGB) and 4 (RGBA) channels are integrated in
+the specification.
 If the decoding went wrong the returned value is NULL.
 }
 \description{
